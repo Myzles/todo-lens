@@ -1,16 +1,16 @@
-# TODO Lens
+# Todoscope
 
 **Every TODO, FIXME, BUG and HACK in your workspace, in one fast tree, with highlights in the editor.**
 
 **Free.** Pro is **$12 a year or $29 once**, with a **7-day Pro trial, no card needed**. Licences are per person: one key covers all of your own machines and editors.
 
-TODO Lens has its own scanner built in. There is no ripgrep binary to find, so nothing breaks when VS Code updates, and it works the same in VS Code, Cursor, Windsurf and VSCodium, locally or over Remote SSH, WSL, Dev Containers and Codespaces.
+Todoscope has its own scanner built in. There is no ripgrep binary to find, so nothing breaks when VS Code updates, and it works the same in VS Code, Cursor, Windsurf and VSCodium, locally or over Remote SSH, WSL, Dev Containers and Codespaces.
 
-![TODO Lens tree and highlights](media/screenshot-tree.png)
+![Todoscope tree and highlights](media/screenshot-tree.png)
 
-## Moving from Todo Tree
+## Switching from another TODO extension
 
-Run **TODO Lens: Import Todo Tree Settings** (it is also offered on first start). It tells you exactly what it copied.
+Run **Todoscope: Import Todo Tree Settings** (it is also offered on first start). It tells you exactly what it copied.
 
 **Carries over:** your tags, colours, include and exclude globs, case setting and custom regex. A custom regex that uses `$TAGS` works unchanged.
 
@@ -18,7 +18,7 @@ Run **TODO Lens: Import Todo Tree Settings** (it is also offered on first start)
 
 Then disable Todo Tree, so you don't see every TODO twice.
 
-What you gain: no ripgrep to install or break after a VS Code update, fewer false hits than Todo Tree's default pattern in our tests, and the TODOs you added on your current branch (Pro).
+What you gain: no ripgrep to install or break after a VS Code update, and the TODOs you added on your current branch (Pro).
 
 ## Free features
 
@@ -39,7 +39,7 @@ What you gain: no ripgrep to install or break after a VS Code update, fewer fals
 - **TODOs added on this branch**: show only the TODOs you added on this branch compared with `main` (or any branch, tag or commit), including work you haven't committed yet. Good for reviewing your own PR before you push.
 - **Who and when**: author and age of every TODO from `git blame`, in the tree and tooltip.
 - **Stale TODOs**: list the ones older than N days (180 by default).
-- **Due dates, assignees and priority**: write `TODO(@sam, 2027-01-15): migrate` and TODO Lens marks it overdue when the date passes, and can group the tree by assignee. `@due(2027-01-15)`, `!high` and `(p1)` also work.
+- **Due dates, assignees and priority**: write `TODO(@sam, 2027-01-15): migrate` and Todoscope marks it overdue when the date passes, and can group the tree by assignee. `@due(2027-01-15)`, `!high` and `(p1)` also work.
 - **Reports**: export what the tree shows to Markdown (a checklist for a PR, standup or tech-debt review), CSV or JSON.
 
 **Try every Pro feature free for 7 days**, no key or card needed: run any Pro command and choose *Start 7-Day Free Trial*.
@@ -49,22 +49,22 @@ What you gain: no ripgrep to install or break after a VS Code update, fewer fals
 | Pro Yearly | **$12 / year** |
 | Pro Lifetime | **$29 once** |
 
-One license key works on all of your machines and editors. Buy with **TODO Lens: Get TODO Lens Pro**, then run **TODO Lens: Enter Pro License Key**. The key is checked once a week and keeps working offline for up to three weeks.
+One license key works on all of your machines and editors. Buy with **Todoscope: Get Todoscope Pro**, then run **Todoscope: Enter Pro License Key**. The key is checked once a week and keeps working offline for up to three weeks.
 
 ## Commands
 
 | Command | |
 |---|---|
-| TODO Lens: Show TODO List | Open the tree |
-| TODO Lens: Go to Next / Previous TODO | `Alt+Shift+]` / `Alt+Shift+[` |
-| TODO Lens: Filter by Text / Filter by Tag / Clear Filters | Narrow the tree |
-| TODO Lens: Group By… | File, folder tree, tag, assignee (Pro) |
-| TODO Lens: Rescan Workspace | Full rescan |
-| TODO Lens: Import Todo Tree Settings | Move your setup over |
-| TODO Lens: Show TODOs Added Since Branch… | Pro |
-| TODO Lens: Toggle Stale TODOs Only | Pro |
-| TODO Lens: Toggle Overdue TODOs Only | Pro |
-| TODO Lens: Export TODO Report… | Pro |
+| Todoscope: Show TODO List | Open the tree |
+| Todoscope: Go to Next / Previous TODO | `Alt+Shift+]` / `Alt+Shift+[` |
+| Todoscope: Filter by Text / Filter by Tag / Clear Filters | Narrow the tree |
+| Todoscope: Group By… | File, folder tree, tag, assignee (Pro) |
+| Todoscope: Rescan Workspace | Full rescan |
+| Todoscope: Import Todo Tree Settings | Move your setup over |
+| Todoscope: Show TODOs Added Since Branch… | Pro |
+| Todoscope: Toggle Stale TODOs Only | Pro |
+| Todoscope: Toggle Overdue TODOs Only | Pro |
+| Todoscope: Export TODO Report… | Pro |
 
 ## Settings
 
@@ -86,7 +86,7 @@ One license key works on all of your machines and editors. Buy with **TODO Lens:
 
 ## Privacy
 
-TODO Lens reads your files locally and sends nothing anywhere. The only network call is the weekly license check for Pro users, which sends the license key to Polar (the store that sells it) and nothing else. Git features run your local `git` and are turned off in untrusted workspaces.
+Todoscope reads your files locally and sends nothing anywhere. The only network call is the weekly license check for Pro users, which sends the license key to Polar (the store that sells it) and nothing else. Git features run your local `git` and are turned off in untrusted workspaces.
 
 ## Support
 

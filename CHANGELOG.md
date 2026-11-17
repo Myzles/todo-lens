@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.4.1
+
+- New name: TODO Lens is now **Todoscope**. Another extension already used the old name. Nothing else changes: same extension ID, settings, commands and licence keys, so your setup and Pro licence keep working.
+
+## 1.4.0
+
+Pro, for reviewing and managing TODOs across a team. Everything free before is still free.
+
+- Pro: **Copy PR Summary**. Lists the TODOs your branch adds and the ones it resolves (a TODO that only moved is not counted as resolved), as a Markdown checklist on your clipboard, ready for a PR description. Includes uncommitted and new files.
+- Pro: **TODO Trend From Git History**. Counts TODOs at the end of each past week (12 by default, `todoLens.trendWeeks` up to 52) and shows the change, with a sparkline. Uses the same comment-aware matching and your exclude filters.
+- Pro: **Team Health Report**. TODOs by owner (the name in the TODO, or the git author of the line), overdue, stale, oldest, hotspots. Open it, copy Markdown, or save JSON for a CI script or dashboard.
+- Free now: **Export > Markdown to clipboard** works without Pro (a plain checklist). CSV, JSON, Markdown files and the age and author columns stay in Pro.
+- Locked Pro commands show what they would produce for your workspace, in one line, in the message you asked for (for example "3 TODOs added and 1 resolved since main"). The free status bar tooltip says how many TODOs are past their due date. Pro shows that count next to the total.
+- Pro prompts: at most one unsolicited Pro message per session (trial notices obey it); a prompt only ever appears because you clicked a locked command.
+- Pro status bar shows overdue count.
+
 ## 1.3.2
 
 - Listing: price and 7-day trial on the first screen, how licences work, and a "Moving from Todo Tree" section listing what the import copies and what it does not. No code changes.
