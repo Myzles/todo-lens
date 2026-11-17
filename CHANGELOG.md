@@ -1,0 +1,39 @@
+# Changelog
+
+## 1.3.2
+
+- Listing: price and 7-day trial on the first screen, how licences work, and a "Moving from Todo Tree" section listing what the import copies and what it does not. No code changes.
+
+## 1.3.1
+
+- The empty tree now says why it is empty: still scanning, no folder open, filters hiding everything (with a Clear Filters button), a narrow scope setting, or genuinely no TODOs (with a Show Log button).
+- Choosing Pro opens checkout and then tells you where the license key will arrive and where to paste it. A wrong key offers Try Again.
+- Export: new "Markdown to clipboard" option, a clear message instead of an empty file when nothing matches, CSV opens correctly in Excel (accents), and a failed save explains itself.
+- "Added since branch" falls back from main to master (or origin/main) when your repo has no main, and a missing branch suggests what to try.
+- Todo Tree import lists what it copied and what it does not carry over (keybindings, named scopes).
+- The Getting Started page opens once on a fresh install.
+
+## 1.3.0
+
+- A short Getting Started walkthrough (Help > Welcome, or it opens on install): open the list, import Todo Tree settings, and an optional 7-day Pro trial.
+- New command "TODO Lens: Start 7-Day Pro Trial". No card needed.
+- If you start the trial, TODO Lens tells you once the day before it ends and once after, so Pro features don't just disappear. Free features always keep working.
+
+## 1.2.0
+
+- After a few successful scans, TODO Lens asks once whether you would like to rate it on the Marketplace. Pick "No thanks" or close it and it never asks again.
+
+## 1.1.0
+
+- New setting `todoLens.scope`: show the whole workspace, only files open in tabs, or only the file you are editing. Todo Tree users asked for this one.
+- New setting `todoLens.gutterIcons`: a coloured dot in the gutter on each TODO line.
+- The TODO count now also shows as a badge on the activity bar icon.
+- Vim script comments (`" TODO: ...`) are found in .vim, .vimrc and .vader files. The Vim and Neovim repos yield 861 more TODOs than before.
+- Scanner uses up to 16 threads instead of 10 on big machines.
+- Editor highlights are skipped for files over 4 MB instead of 20 MB, so one huge file cannot stall the editor.
+
+## 1.0.0
+
+- First release: workspace TODO tree (file, folder, tag and assignee groupings), editor highlights, live updates, filters, next/previous navigation, Todo Tree settings import.
+- Built-in multi-threaded scanner: no ripgrep, respects .gitignore, skips binaries, minified and lock files.
+- Pro: TODOs added since a branch, git author and age, stale and overdue filters, due dates and assignees, Markdown/CSV/JSON reports. 7-day free trial.
